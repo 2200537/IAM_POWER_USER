@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY-AWS-PROJECT-POWER IAM USER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f8f9fa;
+      color: #333;
+         }
+    header {
+      background: white;
+      color: black;
+      padding: 1rem 2rem;
+      text-align: centre;
+           }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: white;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    a {
+      color: green;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MY-AWS-PROJECT-POWER_IAM_USER</h1>
+    <ul>
+  <li>
+<p>Situation: Imagining a scenario where the IT team at Netflix need to give a senior engineer control over AWS resources without giving him full admin rights.</p> 
+Approach: In this situation, the IAM Power User role is used to give the engineer an access to manage resources like EC2 and S3 but can't access IAM users or roles. This ensures they have the access they need while keeping security controls in place.. </p>
+</li>
+</ul>
+
+</p>Lab activities:</p>
+1.	Creating an IAM Power User</p>
+2.	Login the IAM Power user to the AWS Console</p>
+3.	Test IAM Service Access</p>
+4.	Test other Service Access</p>
+    
+<p>PROCEDURE:</p>
+A.	CREATING A POWER IAM USER:</p> 
+1.	Login to AWS console homepage as a root user.
+2.	goto IAM Services and click on users
+3.	click-on create user
+4.	5. Specify your user details
+5.	Tick to make your user an IAM user
+6.	Type in ‘power’ in the search tab under permission policies to Select your permission policy (PowerUserAccess)
+7.	Review and create user<p> 
+<a href="Creating IAM poweruser.pdf" target="_blank">View</a> | <a href="Creating IAM poweruser.pdf" download>Download</a></p>
+B.	TESTING ACCESS TO IAM SERVICES AND OTHER SERVICES:</p>
+1.	8.	Download and save your power user details</p>
+9.	Login to the power user using the details</p>
+10.	On the console homepage, try to access IAM services</p>
+11.	Try to access other services on the console such as S3, EC2 etc.</p>
+<a href="Creating Subnets.pdf" target="_blank">View</a> | <a href="Creating Subnets.pdf" download>Download</a></p> 
+
+</html>
